@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		96329A291E6968A100768147 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96329A281E6968A100768147 /* main.cpp */; };
+		96329A331E696B5E00768147 /* HttpMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96329A311E696B5E00768147 /* HttpMessage.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		96329A251E6968A100768147 /* HugHttp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HugHttp; sourceTree = BUILT_PRODUCTS_DIR; };
 		96329A281E6968A100768147 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		96329A311E696B5E00768147 /* HttpMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpMessage.cpp; sourceTree = "<group>"; };
+		96329A321E696B5E00768147 /* HttpMessage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HttpMessage.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,35 @@
 		96329A271E6968A100768147 /* HugHttp */ = {
 			isa = PBXGroup;
 			children = (
+				96329A341E696BF300768147 /* model */,
+				96329A301E696A7B00768147 /* client */,
+				96329A2F1E696A7300768147 /* server */,
 				96329A281E6968A100768147 /* main.cpp */,
 			);
 			path = HugHttp;
+			sourceTree = "<group>";
+		};
+		96329A2F1E696A7300768147 /* server */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = server;
+			sourceTree = "<group>";
+		};
+		96329A301E696A7B00768147 /* client */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = client;
+			sourceTree = "<group>";
+		};
+		96329A341E696BF300768147 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				96329A311E696B5E00768147 /* HttpMessage.cpp */,
+				96329A321E696B5E00768147 /* HttpMessage.hpp */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96329A291E6968A100768147 /* main.cpp in Sources */,
+				96329A331E696B5E00768147 /* HttpMessage.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +279,7 @@
 				96329A2E1E6968A100768147 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
